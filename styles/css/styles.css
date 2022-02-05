@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inputs {
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inputs button {
+  padding: 0.5rem;
+  border: 0;
+  background-color: #ccc;
+  color: black;
+  border-radius: 0.25rem;
+}
+
+.inputs button:hover {
+  background-color: black;
+  color: white;
+}
+
+.gridContainer {
+  display: -ms-grid;
+  display: grid;
+  height: clamp(20vw, 80vh, 80vw);
+  width: clamp(20vw, 80vh, 80vw);
+  gap: 0.1rem;
+}
+
+.gridContainer div {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #ccc;
+}
+
+.gridContainer div.colored {
+  background-color: black;
+}
+/*# sourceMappingURL=styles.css.map */

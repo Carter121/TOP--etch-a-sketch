@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.inputs {
+	margin-bottom: 1.5rem;
+	display: flex;
+
+	button {
+		padding: 0.5rem;
+		border: 0;
+		background-color: #ccc;
+		color: black;
+		border-radius: 0.25rem;
+
+		&:hover {
+			background-color: black;
+			color: white;
+		}
+	}
+}
+.gridContainer {
+	display: grid;
+	height: clamp(20vw, 80vh, 80vw);
+	width: clamp(20vw, 80vh, 80vw);
+	gap: 0.1rem;
+
+	div {
+		width: 100%;
+		aspect-ratio: 1;
+		background-color: #ccc;
+
+		&.colored {
+			background-color: black;
+		}
+	}
+}
